@@ -144,7 +144,7 @@ mcps call my-db createOrder --raw order_id="12345" sku="ABC-001"
 
 # SQL with special characters
 mcps call alibaba-dms createDataChangeOrder --raw \
-  database_id="36005357" \
+  database_id="123" \
   script="DELETE FROM table WHERE id = 'xxx';" \
   logic="true"
 ```
@@ -264,7 +264,7 @@ mcps tools my-server --simple        # Show names only
 ```bash
 # Use --raw to keep string format
 mcps call alibaba-dms createDataChangeOrder --raw \
-  database_id="36005357" \
+  database_id="123" \
   script="DELETE FROM table WHERE id = 'xxx';" \
   logic="true"
 ```
